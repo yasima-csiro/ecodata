@@ -40,7 +40,7 @@ class OrganisationService {
 
     def create(Map props, boolean createInCollectory = true) {
 
-        def organisation = new Organisation(organisationId: Identifiers.getNew(true, ''), name:props.name)
+        def organisation = new Organisation(organisationId: Identifiers.getNew(true, ''), name:props.name, abn:props.abn)
 
         if (createInCollectory) {
             organisation.collectoryInstitutionId = createCollectoryInstitution(props)

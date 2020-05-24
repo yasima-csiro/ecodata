@@ -54,6 +54,7 @@ class CollectoryService {
                 description: 'pubDescription',
                 acronym: 'acronym',
                 name: 'name',
+                abn:'abn',
                 collectoryInstitutionId: 'uid',
                 url: 'websiteUrl'
         ]
@@ -83,6 +84,7 @@ class CollectoryService {
                     def result = organisationService.create([
                             collectoryInstitutionId: inst.uid,
                             name: inst.name,
+                            abn:inst.abn,
                             description: inst.pubDescription?:"",
                             url: inst.websiteUrl?:"",
                             acronym: inst.acronym?:"",

@@ -36,6 +36,6 @@ class Organisation {
         announcements nullable: true
         description nullable: true
         collectoryInstitutionId nullable: true
-        abn nullable: true
+        abn unique: true
     }
 }
