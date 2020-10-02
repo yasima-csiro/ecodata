@@ -79,6 +79,7 @@ class Project {
     List<String> industries = []
     List<String> bushfireCategories = []
     boolean isBushfire
+    boolean featured //  Migrate String promoteOnHomepage to boolean featured field
     String origin = 'atlasoflivingaustralia'
     String baseLayer
     MapLayersConfiguration mapLayersConfig
@@ -200,6 +201,7 @@ class Project {
         bushfireCategories nullable: true
         mapLayersConfig nullable: true
         managementUnitId nullable: true
+        featured nullable: true
     }
 }
 

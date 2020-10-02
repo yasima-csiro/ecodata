@@ -204,6 +204,16 @@
           "interval": 10,
           "state": "Collapsed",
           "title": "Bushfire recovery projects"
+        },
+        {
+          "isNotHistogram": true,
+          "helpText": "Featured projects",
+          "facetTermType": "Default",
+          "formattedName": "Featured projects",
+          "name": "featured",
+          "interval": 10,
+          "state": "Collapsed",
+          "title": "Featured projects"
         }
       ]
     },

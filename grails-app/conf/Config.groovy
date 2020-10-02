@@ -973,6 +973,12 @@ facets.project = [
                 helpText: 'Project associated to bushfire recovery'
         ],
         [
+                name: "featured",
+                title: 'Featured Project',
+                dataType: 'text',
+                helpText: 'Featured project'
+        ],
+        [
                 name: "organisationFacet",
                 title: 'Organisation',
                 dataType: 'text',

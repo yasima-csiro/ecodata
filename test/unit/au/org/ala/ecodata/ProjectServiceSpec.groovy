@@ -75,7 +75,7 @@ class ProjectServiceSpec extends Specification {
 
     def "test create and update project"() {
         given:
-        def projData = [name:'test proj', description: 'test proj description', dynamicProperty: 'dynamicProperty', isBushfire:true, bushfireCategories: null, alaHarvest: true]
+        def projData = [name:'test proj', description: 'test proj description', dynamicProperty: 'dynamicProperty', isBushfire:true, featured:true, bushfireCategories: null, alaHarvest: true]
         def updatedData = projData + [description: 'test proj updated description', origin: 'atlasoflivingaustralia']
 
         def result, projectId
@@ -121,6 +121,8 @@ class ProjectServiceSpec extends Specification {
         savedProj.isBushfire == updatedData.isBushfire
         savedProj.bushfireCategories == updatedData.bushfireCategories
 
+        then: "ensure the updated featured property is same after the change"
+        savedProj.featured == updatedData.featured
     }
 
     def "test project validation"() {
